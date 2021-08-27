@@ -2,10 +2,9 @@
 
 declare(strict_types=1);
 
-namespace RadioKey\HubClient\Mqtt\Adapter;
+namespace RadioKey\HubClient\Mqtt\Adapter\Bluerhinos;
 
 use Bluerhinos\phpMQTT;
-use RadioKey\HubClient\Command\CommandInterface;
 use RadioKey\HubClient\Mqtt\MqttCommandPublisherInterface;
 
 class BluerhinosMqttCommandPublisher implements MqttCommandPublisherInterface

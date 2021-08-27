@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace RadioKey\HubClient;
 
 use PHPUnit\Framework\TestCase;
-use RadioKey\HubClient\Command\RestartCommand;
-use RadioKey\HubClient\Mqtt\Adapter\BluerhinosMqttCommandPublisher;
+use RadioKey\HubClient\Command\SendCommand;
+use RadioKey\HubClient\Mqtt\Adapter\Bluerhinos\BluerhinosMqttCommandPublisher;
 
 class RadioKeyHubClientTest extends TestCase
 {
@@ -24,7 +24,13 @@ class RadioKeyHubClientTest extends TestCase
 
         $client->publishCommand(
             'AA:BB:CC:DD:EE:FF',
-            new RestartCommand()
+            new SendCommand(
+                1,
+                25,
+                315,
+                12345678,
+                24
+            )
         );
     }
 }
