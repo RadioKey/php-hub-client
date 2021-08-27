@@ -1,0 +1,12 @@
+{
+    "name": "radiokey/php-hub-client",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dmytro Sokil",
+            "email": "dmytro.sokil@gmail.com"
+        }
+    ],
+    "require": {}
+}
